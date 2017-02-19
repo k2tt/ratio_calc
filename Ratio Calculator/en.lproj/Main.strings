@@ -1,0 +1,32 @@
+/* Class = "UILabel"; text = "©HAIMUSHI"; ObjectID = "529-zI-9wh"; */
+"529-zI-9wh.text" = "©HAIMUSHI";
+
+/* Class = "UITextField"; placeholder = "number"; ObjectID = "CE4-2G-ezQ"; */
+"CE4-2G-ezQ.placeholder" = "number";
+
+/* Class = "UITextField"; placeholder = "number"; ObjectID = "TOE-v6-DiF"; */
+"TOE-v6-DiF.placeholder" = "number";
+
+/* Class = "UITextField"; text = "3"; ObjectID = "TOE-v6-DiF"; */
+"TOE-v6-DiF.text" = "3";
+
+/* Class = "UILabel"; text = ":"; ObjectID = "UuD-D9-9Cq"; */
+"UuD-D9-9Cq.text" = ":";
+
+/* Class = "UILabel"; text = " Ratio Calclator"; ObjectID = "XPT-rT-C1Q"; */
+"XPT-rT-C1Q.text" = " Ratio Calclator";
+
+/* Class = "UILabel"; text = "χ"; ObjectID = "boM-wV-FEa"; */
+"boM-wV-FEa.text" = "χ";
+
+/* Class = "UILabel"; text = ":"; ObjectID = "eoE-7e-LNa"; */
+"eoE-7e-LNa.text" = ":";
+
+/* Class = "UITextField"; placeholder = "number"; ObjectID = "t1z-RF-8LJ"; */
+"t1z-RF-8LJ.placeholder" = "number";
+
+/* Class = "UITextField"; text = "4"; ObjectID = "t1z-RF-8LJ"; */
+"t1z-RF-8LJ.text" = "4";
+
+/* Class = "UILabel"; text = "="; ObjectID = "yeZ-Nt-mUS"; */
+"yeZ-Nt-mUS.text" = "=";
