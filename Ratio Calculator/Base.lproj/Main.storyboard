@@ -23,21 +23,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="59b-SA-e8H">
-                                <rect key="frame" x="16" y="45" width="347" height="194"/>
+                                <rect key="frame" x="16" y="45" width="347" height="196"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sq-jE-fYz">
-                                        <rect key="frame" x="0.0" y="0.0" width="347" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="347" height="41"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Ratio Calclator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XPT-rT-C1Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="347" height="39"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="347" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eE0-V6-wXI">
-                                        <rect key="frame" x="0.0" y="79" width="347" height="115"/>
+                                        <rect key="frame" x="0.0" y="81" width="347" height="115"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FU7-Xb-tbC">
                                                 <rect key="frame" x="0.0" y="0.0" width="324" height="115"/>
@@ -51,7 +51,7 @@
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" placeholder="number" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t1z-RF-8LJ">
                                                                         <rect key="frame" x="6" y="0.0" width="140" height="50"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                                                         <connections>
                                                                             <action selector="editText:" destination="BYZ-38-t0r" eventType="editingChanged" id="HOi-U1-Ysg"/>
@@ -78,7 +78,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="20" id="Hln-6M-V7r"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -88,7 +88,7 @@
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" placeholder="number" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOE-v6-DiF">
                                                                         <rect key="frame" x="6" y="0.0" width="140" height="50"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                                                         <connections>
                                                                             <action selector="editText2:" destination="BYZ-38-t0r" eventType="editingChanged" id="qfh-Hl-Xur"/>
@@ -124,7 +124,7 @@
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="number" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CE4-2G-ezQ">
                                                                         <rect key="frame" x="6" y="0.0" width="140" height="50"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="attributedPlaceholder">
@@ -156,16 +156,16 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="20" id="EYD-K8-D6d"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="40"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="42"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfx-jw-n5g">
                                                                 <rect key="frame" x="172" y="0.0" width="152" height="50"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="χ" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boM-wV-FEa">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boM-wV-FEa">
                                                                         <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
@@ -191,7 +191,7 @@
                                                     <constraint firstAttribute="height" constant="48" id="PtH-5x-efs"/>
                                                     <constraint firstAttribute="width" constant="15" id="ozI-aC-ipN"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="31"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="36"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -200,7 +200,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ode-JS-Khq">
-                                <rect key="frame" x="155" y="269" width="65" height="32"/>
+                                <rect key="frame" x="155" y="271" width="65" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="65" id="h9z-oZ-byB"/>
                                 </constraints>
@@ -211,7 +211,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©HAIMUSHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="529-zI-9wh">
-                                <rect key="frame" x="16" y="331" width="343" height="17"/>
+                                <rect key="frame" x="16" y="333" width="343" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
