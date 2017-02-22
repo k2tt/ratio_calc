@@ -24,12 +24,6 @@ class ViewControllerTop: UIViewController {
     
     // input に入力があった時 calc() を実行
     @IBAction func editText(_ sender: UITextField) {
-//        if _temp_text.contains(".") {
-//            input_1.text = String(Double(sender.text!)!)
-//        }
-//        if string1.hasSuffix(string2) {
-//            print("\(string1) は \(string2) で終わる") // 出力されません
-//        }
         checkText(_input: input_1, _text: sender.text!)
         calc()
     }
@@ -127,7 +121,7 @@ class ViewControllerTop: UIViewController {
             }
         }
         else {
-            result.text = "χ"
+            result.text = "x"
         }
     }
     
