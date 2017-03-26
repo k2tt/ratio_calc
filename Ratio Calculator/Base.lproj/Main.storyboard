@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="59b-SA-e8H">
-                                <rect key="frame" x="16" y="45" width="347" height="196"/>
+                                <rect key="frame" x="16" y="50" width="347" height="196"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6sq-jE-fYz">
                                         <rect key="frame" x="0.0" y="0.0" width="347" height="41"/>
@@ -163,7 +164,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfx-jw-n5g">
                                                                 <rect key="frame" x="172" y="0.0" width="152" height="50"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="x" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boM-wV-FEa">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boM-wV-FEa">
                                                                         <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -199,20 +200,19 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ode-JS-Khq">
-                                <rect key="frame" x="155" y="271" width="65" height="32"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haimushi_logo" translatesAutoresizingMaskIntoConstraints="NO" id="7QF-y6-hRg">
+                                <rect key="frame" x="137.5" y="306" width="100" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="h9z-oZ-byB"/>
+                                    <constraint firstAttribute="width" secondItem="7QF-y6-hRg" secondAttribute="height" multiplier="358:118" id="7Ra-Wg-c3n"/>
+                                    <constraint firstAttribute="width" constant="100" id="w53-RC-UVr"/>
                                 </constraints>
-                                <state key="normal" image="btn_info"/>
-                                <connections>
-                                    <action selector="tapInfo:" destination="BYZ-38-t0r" eventType="touchDown" id="bsT-KM-mXE"/>
-                                    <segue destination="f0W-yq-ohJ" kind="presentation" id="NZH-da-KWV"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©HAIMUSHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="529-zI-9wh">
-                                <rect key="frame" x="16" y="333" width="343" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© HAIMUSHI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pO-H2-EDg">
+                                <rect key="frame" x="137.5" y="344" width="100" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="y17-DR-upw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -221,13 +221,12 @@
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                         <constraints>
                             <constraint firstItem="59b-SA-e8H" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1pl-Mi-9ZZ"/>
+                            <constraint firstItem="1pO-H2-EDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Y0-XC-HrH"/>
                             <constraint firstAttribute="trailing" secondItem="59b-SA-e8H" secondAttribute="trailing" constant="12" id="6DY-jb-56P"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="529-zI-9wh" secondAttribute="trailing" id="72w-bE-wqz"/>
-                            <constraint firstItem="529-zI-9wh" firstAttribute="top" secondItem="ode-JS-Khq" secondAttribute="bottom" constant="30" id="ZKL-bW-yyW"/>
-                            <constraint firstItem="ode-JS-Khq" firstAttribute="top" secondItem="59b-SA-e8H" secondAttribute="bottom" constant="30" id="itt-gE-tOM"/>
-                            <constraint firstItem="ode-JS-Khq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wOl-Z9-1bX"/>
-                            <constraint firstItem="529-zI-9wh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xZO-6Q-MgG"/>
-                            <constraint firstItem="59b-SA-e8H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="zOi-9E-VZl"/>
+                            <constraint firstItem="7QF-y6-hRg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7pF-Bp-eE5"/>
+                            <constraint firstItem="1pO-H2-EDg" firstAttribute="top" secondItem="7QF-y6-hRg" secondAttribute="bottom" constant="5" id="gFS-5S-6CB"/>
+                            <constraint firstItem="7QF-y6-hRg" firstAttribute="top" secondItem="59b-SA-e8H" secondAttribute="bottom" constant="60" id="t6m-tt-5b3"/>
+                            <constraint firstItem="59b-SA-e8H" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="zOi-9E-VZl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -242,49 +241,8 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="36.431784107946029"/>
         </scene>
-        <!--View Controller Info-->
-        <scene sceneID="fWS-c5-XKw">
-            <objects>
-                <viewController storyboardIdentifier="infoPage" id="f0W-yq-ohJ" customClass="ViewControllerInfo" customModule="Ratio_Calculator" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Hxz-uG-TFd"/>
-                        <viewControllerLayoutGuide type="bottom" id="k8N-Rz-h8c"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bfE-HU-1Uh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-sA-v69">
-                                <rect key="frame" x="335" y="30" width="30" height="39"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13N-88-FBn">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="39"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <state key="normal" title=" ✕"/>
-                                        <connections>
-                                            <segue destination="ayU-tN-LCh" kind="unwind" unwindAction="unwindToTopWithSegue:" id="m4g-em-xSg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="4W5-w5-tXy"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="aEw-sA-v69" secondAttribute="trailing" constant="10" id="kge-cB-dhD"/>
-                            <constraint firstItem="aEw-sA-v69" firstAttribute="top" secondItem="Hxz-uG-TFd" secondAttribute="bottom" constant="10" id="r8W-gl-HkZ"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nZR-6P-JV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ayU-tN-LCh" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="868" y="35.532233883058474"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="btn_info" width="32" height="32"/>
+        <image name="haimushi_logo" width="179" height="59"/>
     </resources>
 </document>

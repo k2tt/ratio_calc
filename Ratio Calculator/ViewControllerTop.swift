@@ -17,10 +17,10 @@ class ViewControllerTop: UIViewController {
     @IBOutlet weak var input_3: UITextField!
     @IBOutlet var view_bg: UIView!
     
-    // iボタンを押した時にキーボードを閉じる
-    @IBAction func tapInfo(_ sender: UIButton) {
-        self.input_1.resignFirstResponder()
-    }
+//    // iボタンを押した時にキーボードを閉じる
+//    @IBAction func tapInfo(_ sender: UIButton) {
+//        self.input_1.resignFirstResponder()
+//    }
     
     // input に入力があった時 calc() を実行
     @IBAction func editText(_ sender: UITextField) {
@@ -121,14 +121,14 @@ class ViewControllerTop: UIViewController {
             }
         }
         else {
-            result.text = "x"
+            result.text = "0"
         }
     }
     
     // 前の画面から戻る
-    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
-        self.input_1.becomeFirstResponder()
-    }
+//    @IBAction func unwindToTop(segue: UIStoryboardSegue) {
+//        self.input_1.becomeFirstResponder()
+//    }
 
     
     // オンロード

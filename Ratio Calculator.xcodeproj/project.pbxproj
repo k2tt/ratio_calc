@@ -14,7 +14,6 @@
 		B7C67C981E46F92300BB3221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C67C961E46F92300BB3221 /* LaunchScreen.storyboard */; };
 		B7C67CA31E46F92300BB3221 /* Ratio_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C67CA21E46F92300BB3221 /* Ratio_CalculatorTests.swift */; };
 		B7C67CAE1E46F92300BB3221 /* Ratio_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C67CAD1E46F92300BB3221 /* Ratio_CalculatorUITests.swift */; };
-		B7D9F3EF1E4FB17B00343D5B /* ViewControllerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D9F3EE1E4FB17B00343D5B /* ViewControllerInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		B7C67CA91E46F92300BB3221 /* Ratio CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ratio CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C67CAD1E46F92300BB3221 /* Ratio_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratio_CalculatorUITests.swift; sourceTree = "<group>"; };
 		B7C67CAF1E46F92300BB3221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7D9F3EE1E4FB17B00343D5B /* ViewControllerInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 				B7C67C8D1E46F92300BB3221 /* AppDelegate.swift */,
 				B7C67C8F1E46F92300BB3221 /* ViewControllerTop.swift */,
 				B7C67C911E46F92300BB3221 /* Main.storyboard */,
-				B7D9F3EE1E4FB17B00343D5B /* ViewControllerInfo.swift */,
 				B7C67C941E46F92300BB3221 /* Assets.xcassets */,
 				B7C67C961E46F92300BB3221 /* LaunchScreen.storyboard */,
 				B7C67C991E46F92300BB3221 /* Info.plist */,
@@ -192,7 +189,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = k2tt;
+				ORGANIZATIONNAME = HAIMUSHI;
 				TargetAttributes = {
 					B7C67C891E46F92200BB3221 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -264,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7C67C901E46F92300BB3221 /* ViewControllerTop.swift in Sources */,
-				B7D9F3EF1E4FB17B00343D5B /* ViewControllerInfo.swift in Sources */,
 				B7C67C8E1E46F92300BB3221 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,9 +417,10 @@
 				INFOPLIST_FILE = "Ratio Calculator/Info.plist";
 				INSTALL_OWNER = HAIMUSHI;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haimushi.Ratio-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = org.haimushi.RatioCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -436,9 +433,10 @@
 				INFOPLIST_FILE = "Ratio Calculator/Info.plist";
 				INSTALL_OWNER = HAIMUSHI;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haimushi.Ratio-Calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = org.haimushi.RatioCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -449,7 +447,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Ratio CalculatorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.k2tt.Ratio-CalculatorTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haimushi.Ratio-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratio Calculator.app/Ratio Calculator";
@@ -463,7 +461,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Ratio CalculatorTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.k2tt.Ratio-CalculatorTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haimushi.Ratio-CalculatorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ratio Calculator.app/Ratio Calculator";
@@ -476,7 +474,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Ratio CalculatorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.k2tt.Ratio-CalculatorUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haimushi.Ratio-CalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Ratio Calculator";
@@ -489,7 +487,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Ratio CalculatorUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.k2tt.Ratio-CalculatorUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.haimushi.Ratio-CalculatorUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Ratio Calculator";
