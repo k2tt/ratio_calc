@@ -71,14 +71,15 @@ class ViewControllerTop: UIViewController {
         // print(type(of: _tempText)) // 型調査
         
         // 先頭が"0"かつ、2文字以上のとき
-        if _tempText.hasPrefix("0") && _tempText.characters.count > 1 {
+        if _tempText.hasPrefix("0") && _tempText.count > 1 {
             
             // 2文字目のindexを取得
             let _secondIndex = _tempText.index(after:_startIndex)
             
             // 2文字目が"."でないときは、先頭の0を消す
             if _tempText[_secondIndex] != "." {
-                _input.text = _tempText.substring(from: _tempText.index(_startIndex, offsetBy: 1))
+//                _input.text = _tempText.substring(from: _tempText.index(_startIndex, offsetBy: 1))
+                _input.text = String(_tempText.suffix(1))
             }
         }
         
@@ -89,7 +90,7 @@ class ViewControllerTop: UIViewController {
 
         // 文字列に"."が2個以上含まれていれば最後の"."を削除する
         if _matchCount > 1 {
-            _input.text = _tempText.substring(to: _tempText.index(before: _tempText.endIndex))
+            _input.text = String(_tempText.prefix(_tempText.count - 1))
         }
         
     }
@@ -143,7 +144,7 @@ class ViewControllerTop: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: bg_image)
         
         // Placeholderスタイル
-        let _phConfig: NSAttributedString = NSAttributedString(string: "Number", attributes: [NSForegroundColorAttributeName: UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.5)])
+        let _phConfig: NSAttributedString = NSAttributedString(string: "Number", attributes: [NSAttributedStringKey.foregroundColor: UIColor(red:1.0,green:1.0,blue:1.0,alpha:0.5)])
         self.input_1.attributedPlaceholder = _phConfig
         self.input_2.attributedPlaceholder = _phConfig
         self.input_3.attributedPlaceholder = _phConfig
