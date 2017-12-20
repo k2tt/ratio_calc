@@ -208,10 +208,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©8164" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pO-H2-EDg">
-                                <rect key="frame" x="137.5" y="344" width="100" height="12"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="y17-DR-upw"/>
-                                </constraints>
+                                <rect key="frame" x="171" y="344" width="33" height="12"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
