@@ -78,7 +78,6 @@ class ViewControllerTop: UIViewController {
             
             // 2文字目が"."でないときは、先頭の0を消す
             if _tempText[_secondIndex] != "." {
-//                _input.text = _tempText.substring(from: _tempText.index(_startIndex, offsetBy: 1))
                 _input.text = String(_tempText.suffix(1))
             }
         }
@@ -150,7 +149,7 @@ class ViewControllerTop: UIViewController {
         self.input_3.attributedPlaceholder = _phConfig
         
         //input_1にフォーカス
-        self.input_3.becomeFirstResponder()
+        self.input_1.becomeFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
