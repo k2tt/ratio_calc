@@ -11,10 +11,10 @@ import UIKit
 class ViewControllerTop: UIViewController {
     
     private var toolbar: UIToolbar!
-    @IBOutlet weak var result: UILabel!
     @IBOutlet weak var input_1: UITextField!
     @IBOutlet weak var input_2: UITextField!
     @IBOutlet weak var input_3: UITextField!
+    @IBOutlet weak var result_1: UITextField!
     @IBOutlet var view_bg: UIView!
     
 //    // iボタンを押した時にキーボードを閉じる
@@ -108,20 +108,20 @@ class ViewControllerTop: UIViewController {
             
             // 結果が 0.001 以下なら
             if(_result < 0.001) {
-                result.text = "0"
+                result_1.text = "0"
             }
             // 小数点以下が0なら整数にする
             else if _float[1] == "0" {
-                result.text = String((_result.description as NSString).integerValue)
+                result_1.text = String((_result.description as NSString).integerValue)
             }
             else {
                 // 小数点第3桁以下は切り捨て
                 let _decimal: Double = floor(_result * 1000)
-                result.text = String(_decimal / 1000)
+                result_1.text = String(_decimal / 1000)
             }
         }
         else {
-            result.text = "0"
+            result_1.text = "0"
         }
     }
     

@@ -164,18 +164,18 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfx-jw-n5g">
                                                                 <rect key="frame" x="172" y="0.0" width="152" height="50"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boM-wV-FEa">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
-                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k7P-Lx-luu">
+                                                                        <rect key="frame" x="6" y="0.0" width="140" height="50"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
+                                                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="34"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                    </textField>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstItem="boM-wV-FEa" firstAttribute="top" secondItem="Jfx-jw-n5g" secondAttribute="top" id="9n8-ca-1U9"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="boM-wV-FEa" secondAttribute="bottom" id="DJh-Lm-KpP"/>
-                                                                    <constraint firstAttribute="trailing" secondItem="boM-wV-FEa" secondAttribute="trailing" constant="5" id="Gbw-kW-YtZ"/>
-                                                                    <constraint firstItem="boM-wV-FEa" firstAttribute="leading" secondItem="Jfx-jw-n5g" secondAttribute="leading" id="bGn-PU-zMh"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="k7P-Lx-luu" secondAttribute="trailing" constant="6" id="1mH-91-6Aa"/>
+                                                                    <constraint firstItem="k7P-Lx-luu" firstAttribute="top" secondItem="Jfx-jw-n5g" secondAttribute="top" id="2dU-bw-89P"/>
+                                                                    <constraint firstItem="k7P-Lx-luu" firstAttribute="leading" secondItem="Jfx-jw-n5g" secondAttribute="leading" constant="6" id="2jO-l9-ShP"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="k7P-Lx-luu" secondAttribute="bottom" id="DBe-Jl-48R"/>
                                                                     <constraint firstAttribute="height" constant="50" id="kkM-tE-HkB"/>
                                                                 </constraints>
                                                             </view>
@@ -230,7 +230,7 @@
                         <outlet property="input_1" destination="t1z-RF-8LJ" id="uqk-1P-QYv"/>
                         <outlet property="input_2" destination="TOE-v6-DiF" id="lvY-fP-C1E"/>
                         <outlet property="input_3" destination="CE4-2G-ezQ" id="dki-LF-8Ee"/>
-                        <outlet property="result" destination="boM-wV-FEa" id="Yrh-kg-LKU"/>
+                        <outlet property="result_1" destination="k7P-Lx-luu" id="jjn-jc-bml"/>
                         <outlet property="view_bg" destination="8bC-Xf-vdC" id="8qf-eu-KhV"/>
                     </connections>
                 </viewController>
